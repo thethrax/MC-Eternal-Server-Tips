@@ -2,7 +2,7 @@
 Eternal server side configs, etc  <br />
 Most of these are tested on 1.3.7.1, however should mostly work on 1.4.x  <br />
 
---- Recommended things ---  <br />
+**--- Recommended things ---  <br />**
 
 Disable spike_creative:  <br />
 in \config\extrautils2.cfg  <br />
@@ -57,7 +57,7 @@ Server.Properties  <br />
 appliedenergistics2.cfg  <br />
 I:craftingCalculationTimePerTick=1  <br />
 
--- Useful commands --  <br />
+**-- Useful commands --  <br />**
 
 /chunks unload_everything, resets all loaded chunks by players  <br />
 /forge entity list, shows entities in that world  <br />
@@ -73,7 +73,7 @@ compactcoins.zs  <br />
 starmetalfix.zs  <br /> 
 world-gen.json  <br />
 
--- Wrapper script for windows server --  <br />
+**-- Wrapper script for windows server --  <br />**
 Add this in a .bat file, use to launch server. It will start server if server is stopped or crashed. Java args can be whatever you prefer.  <br />
 
 @echo off  <br />
@@ -105,7 +105,7 @@ I:maximumChunksPerTicket=75 <br />
 I:maximumTicketCount=350 <br />
 I:playerTicketCount=600 <br />
 
---- These are from official discord, I have not tested all of them. I have heard using spongeforge can create new issues --- <br />
+**--- These are from official discord, I have not tested all of them. I have heard using spongeforge can create new issues --- <br />**
  
 Config Changes <br />
 ------------------------ <br />
