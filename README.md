@@ -1,12 +1,12 @@
-# MC-Eternal-Server-Tips
-(View in raw for no wrap)
-Eternal server side configs, etc
-Most of these are tested on 1.3.7.1, however should mostly work on 1.4.x
+# MC-Eternal-Server-Tips <br />
+(View in raw for no wrap) <br />
+Eternal server side configs, etc  <br />
+Most of these are tested on 1.3.7.1, however should mostly work on 1.4.x  <br />
 
---- Recommended things ---
+--- Recommended things ---  <br />
 
-Disable spike_creative: 
-in \config\extrautils2.cfg
+Disable spike_creative:  <br />
+in \config\extrautils2.cfg  <br />
     B:spike_creative=false
 
 Disable giant chance cube things:
