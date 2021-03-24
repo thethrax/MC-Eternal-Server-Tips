@@ -1,7 +1,7 @@
 # MC-Eternal-Server-Tips
-Minecraft Eternal Server Tips
 
 Eternal server side configs, etc
+Most of these are tested on 1.3.7.1, however should mostly work on 1.4.x
 
 --- Recommended things ---
 
@@ -52,6 +52,12 @@ I:Unload=15
 unloader
 leave as default
 
+Server.Properties
+    Set server view distance to 7
+    
+appliedenergistics2.cfg
+I:craftingCalculationTimePerTick=1
+
 -- Useful commands --
 
 /chunks unload_everything, resets all loaded chunks by players
@@ -59,6 +65,9 @@ leave as default
 /mc remove colony: 1 , it needs the space between colony: and 1, it will remove colony #1
 /bgon unload , /bgon automatic
 /icbmc remove all , gets rid of icbm entity lag that seems to pop up now and then.
+/cofh tps 0
+For live ingame display of TPS for all dimensions and other interesting data, use tool called "chunk-pregenerator". To enable, go to Options Gui in Controls.
+set the hotkey for that, open it up, there will be a TrackerUI options, click that, and also click "enable Tracker Gui". You need to be opped to see info I believe.
 
 Fixes from #tips for 1.3.7.1 I dont know if these are needed for 1.4
 compactcoins.zs
@@ -97,3 +106,33 @@ I:maximumChunksPerTicket=75
 I:maximumTicketCount=350
 I:playerTicketCount=600
 
+--- These are from official discord, I have not tested all of them. I have heard using spongeforge can create new issues ---
+
+Config Changes
+------------------------
+
+Added Spongeforge - spongeforge-1.12.2-2838-7.1.9
+
+Rename Spongeforge Jar file to _aaaaaSpongeforge.jar
+
+Replace Lag Goggles with THIN version (For Spongeforge)** (As for now Lag Goggles are not working with SpongeForge 7.1.9 - Do not use with this version)
+
+Disabled The Summoner - Depends on multimob, adds 1 mob
+Disabled Primitive Mobs - Buggy as hell, Lags really bad, Depends on multimob
+Disabled Multimob - Complete and utter poo, causes more issues than its worth
+Disabled Farseek - Streams Coremod
+Disabled Streams - Prone to Laggyness
+
+Sponge config
+    Changed per player enemy spawning: (spawn-limit-monster=30 <70)
+    Changed Dimension Spawn Loading: (keep-spawn-loaded=false)
+    Changed all dimensions from being loaded on server start (/config/sponge/worlds/*)
+    
+Foamfix:
+    B:optimizedBlockPos=false
+    B:patchChunkSerialization=false
+
+Config Change:
+    Dungeons2: changed rarity and spawn distance: (I:dungeonGenProbability=15 <35 -- I:minChunksPerDungeon=500 <300)
+    Fish's Undead Rising: changed spawn rate: (I:"piranha spawn rate"=20 <2 -- I:"raven spawn rate"=20 <8)
+    Ruins: Changed rarity: (anyRuinsMinDistance=128 <64)
