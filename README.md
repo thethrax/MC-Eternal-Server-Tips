@@ -1,5 +1,5 @@
 # MC-Eternal-Server-Tips
-
+(View in raw for no wrap)
 Eternal server side configs, etc
 Most of these are tested on 1.3.7.1, however should mostly work on 1.4.x
 
